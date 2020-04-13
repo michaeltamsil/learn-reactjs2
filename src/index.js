@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
+
+import ButtonSuccess from './components/ButtonSuccess';
+import Inventory from './components/inventory';
+import Label from './components/Label';
+import Timer from './components/Timer';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <ButtonSuccess/>
+      <Timer/>
+        <ol>
+          <li>beli buku</li>
+          <li>belajar reactjs</li>
+        </ol>
+        <Label isi="ini adalah isi"/>
+        <Label isi="contoh mengirimkan props ke children"/>
+        <Inventory/>
   </React.StrictMode>,
   document.getElementById('root')
 );
